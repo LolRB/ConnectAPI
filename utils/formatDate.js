@@ -15,7 +15,7 @@ const addDateSuffix = (date) => {
   }
 };
 
-module.exports = (
+const formatTimestamp = (
   timestamp,
   { monthLength = "short", dateSuffix = true } = {}
 ) => {
@@ -45,3 +45,5 @@ module.exports = (
 
   return `${month} ${day}, ${year} at ${hours}:${minutes} ${period}`;
 };
+
+export { addDateSuffix, formatTimestamp };
