@@ -34,7 +34,7 @@ export const generateUser = async (req, res) => {
     res.status(201).json(newUser);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Server error" });
+    res.status(500).json({ message: error.message });
   }
 };
 
