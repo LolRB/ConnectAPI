@@ -46,4 +46,4 @@ const formatTimestamp = (
   return `${month} ${day}, ${year} at ${hours}:${minutes} ${period}`;
 };
 
-export { addDateSuffix, formatTimestamp };
+export default { addDateSuffix, formatTimestamp };

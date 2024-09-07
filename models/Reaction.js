@@ -1,5 +1,5 @@
 import { Schema, Types } from 'mongoose';
-import dateFormat from '../utils/dateFormat.js';
+import dateFormat from '../utils/formatDate.js';
 
 const reactionSchema = new Schema(
   {
